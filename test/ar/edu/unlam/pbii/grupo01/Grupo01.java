@@ -39,7 +39,7 @@ public class Grupo01 {
 		assertEquals(nuevo.getEMail(), "camila@telecomunications.com");
 		
 	}
-
+	
 	@Test
 	public void  queSePuedaCrearUnClienteTri() {
 		ClienteTri nuevo = new ClienteTri(1000, "Camila", "11", "63598237", "46546546504637", "camila@telecomunications.com");

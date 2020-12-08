@@ -18,4 +18,29 @@ public class Cliente {
 		return nombre;
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((numeroDeCliente == null) ? 0 : numeroDeCliente.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!(obj instanceof Cliente))
+			return false;
+		Cliente other = (Cliente) obj;
+		if (numeroDeCliente == null) {
+			if (other.numeroDeCliente != null)
+				return false;
+		} else if (!numeroDeCliente.equals(other.numeroDeCliente))
+			return false;
+		return true;
+	}
+	
+	
+
 }

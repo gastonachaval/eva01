@@ -2,20 +2,20 @@ package ar.edu.unlam.pbii.grupo01;
 
 public class ClienteTelefonia extends Cliente {
 	
-	private Integer codigoDeArea;
-	private Integer telefono;
+	private String codigoDeArea;
+	private String telefono;
 
-	public ClienteTelefonia(Integer numeroDeCliente, String nombre,Integer codigoDeArea,Integer telefono) {
+	public ClienteTelefonia(Integer numeroDeCliente, String nombre,String codigoDeArea,String telefono) {
 		super(numeroDeCliente,nombre);
 		this.codigoDeArea=codigoDeArea;
 		this.telefono=telefono;
 	}
 
-	public Integer getCodigoDeArea() {
+	public String getCodigoDeArea() {
 		return codigoDeArea;
 	}
 
-	public Integer getTelefono() {
+	public String getTelefono() {
 		return telefono;
 	}
 	
